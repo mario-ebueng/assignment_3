@@ -1,0 +1,166 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+    color:white;
+}
+nav{
+    text-align: center;
+}
+h1{
+    font-weight: 900;
+    text-align: center;
+    font-size: 15vh;
+    background-image: url("../images/paint.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(255, 255, 255, 0.382);
+}
+.l1{
+    display: inline;
+}
+
+nav a{
+    font-size: 2rem;
+    margin: 10px 50px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+nav a {
+  background-image: linear-gradient(
+    to right,
+    white,
+    white,
+    rgb(247, 141, 159) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:before{
+  content: '';
+  background: white;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+ background-position: 0;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.762);
+    letter-spacing: 5px;
+    font-size: 4rem;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, transparent, black), url("../images/background.jpg");
+    justify-content: center;
+}
+
+.plays{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-item{
+    width: 500px;
+    height: 500px;
+    margin: 2em;
+    background-color: black;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.762);
+}
+
+#play{
+    width: 400px;
+    height: 225px;
+
+}
+
+.button{
+    color: antiquewhite;
+    background-color: rgb(147, 147, 147);
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+.foot{
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-container-1{
+    display: grid;
+    margin-top: 5em;
+    grid-template-columns: repeat(4, 300px);
+    grid-gap: 5em;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+li{
+    display: block;
+    text-decoration: none;
+    margin: 1em;
+}
+a{
+    color: antiquewhite;
+    text-decoration: none;
+
+}
+.grid-item a{
+    color: rgb(247, 141, 159);
+    font-weight: bold;
+    transition: all 500ms;
+}
+    
+.grid-item a:hover {
+    font-size:2em;
+    font-size-adjust: 20px;
+}
+
+.grid-item{
+    color: rgb(247, 141, 159);
+    text-align: left;
+    width: 20em;
+    height: 20em;
+}
+.grid-item h3{
+    color:rgb(247, 141, 159);
+    font-size: 2em;
+    text-align: left;
+}
+
+.grid-item-1{
+    background-image: url("../images/chicago.jpg");
+    background-repeat: no-repeat;
+}
+
+.grid-item-2 a{
+    color: rgb(0, 94, 255)
+}
